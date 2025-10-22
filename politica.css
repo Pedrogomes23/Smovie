@@ -1,0 +1,87 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url(fundo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+
+header {
+  background-color: #000000;
+  text-align: center;
+  padding: 40px 20px 20px;
+  border-bottom: 2px solid #4d7cff;
+}
+
+header .logo {
+  width: 120px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #4d7cff;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #141414;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+section {
+  margin-bottom: 35px;
+}
+
+h2 {
+  color: #4d7cff;
+  border-left: 4px solid #4d7cff;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+a {
+  color: #4d7cff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.update {
+  font-size: 0.9em;
+  color: #999;
+  text-align: right;
+  margin-top: 30px;
+}
+
+
+footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 15px 10px;
+  border-top: 2px solid #4d7cff;
+  font-size: 0.9em;
+  color: #bbb;
+}
+
+footer p {
+  margin: 0;
+}

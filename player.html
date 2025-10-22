@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senai Movie</title>
+  <link rel="stylesheet" href="player.css">
+  <link rel="shortcut icon" href="SENAI MOVIE.png">
+</head>
+<body>
+
+  <nav>
+    <img src="SENAI MOVIE.png" alt="Logo Senai Movie" class="logo">
+  </nav>
+
+  <div class="container">
+
+    <div class="movie-card" data-video="https://www.youtube.com/embed/-ovLuuBiwY8">
+      <img src="https://img.youtube.com/vi/-ovLuuBiwY8/maxresdefault.jpg" alt="Invasores">
+      <h3>Invasores</h3>
+    </div>
+    <div class="movie-card" data-video="https://www.youtube.com/embed/6PHiBzRmqYw">
+      <img src="https://img.youtube.com/vi/6PHiBzRmqYw/maxresdefault.jpg" alt="Andromeda">
+      <h3>Andromeda</h3>
+    </div>
+    <div class="movie-card" data-video="https://www.youtube.com/embed/QvicRPdF7SU?si=u-GduU890dWLouhm">
+    <img src="https://i.ytimg.com/vi/QvicRPdF7SU/hqdefault.jpg?sqp=-oaymwEnCOADEI4CSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBw7ukh9WLJLu__MqPB89j_V6OYJw" alt="Capitães de Areia">
+    <h3>Capitães de Areia</h3>
+    </div>
+    <div class="movie-card" data-video="https://www.youtube.com/embed/xzVib8zkrj8">
+      <img src="https://img.youtube.com/vi/xzVib8zkrj8/maxresdefault.jpg" alt="Os Vingadores">
+      <h3>Os Vingadores</h3>
+    </div>
+    <div class="movie-card" data-video="https://www.youtube.com/embed/Q2YEICUJZ0c">
+      <img src="https://img.youtube.com/vi/Q2YEICUJZ0c/maxresdefault.jpg" alt="Inatividade Paranormal">
+      <h3>Inatividade Paranormal</h3>
+    </div>
+    <div class="movie-card" data-video="https://www.youtube.com/embed/_J-tObfmlQA">
+      <img src="https://img.youtube.com/vi/_J-tObfmlQA/maxresdefault.jpg" alt="Super-Herói: O Filme">
+      <h3>Super-Herói: O Filme</h3>
+    </div>
+  </div>
+
+  <div class="modal" id="video">
+    <div class="modal-content">
+      <span class="fechar">&times;</span>
+      <iframe id="video-frame" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+  <form action="player.html" method="get">
+        <button type="submit" class="btn-in">Inicio</button>
+    </form>
+    <form action="https://www.netflix.com/br/browse/genre/34399" target="_blank">
+        <button type="submit" class="btn-cat">Categorias</button>
+    </form>
+    <form action="https://about.netflix.com/pt_br/new-to-watch" target="_blank">
+        <button type="submit" class="btn-nov">Novidades</button>
+    </form>
+    <form action="index.html" method="get">
+        <button type="submit" class="btn-voltar">Voltar</button>
+    </form>
+  <script>
+    document.querySelectorAll(".movie-card").forEach(card => {
+    card.onclick = () => {
+    const modal = document.getElementById("video");
+    const iframe = document.getElementById("video-frame");
+    iframe.src = card.dataset.video + "?autoplay=1";
+    modal.style.display = "flex";
+
+    modal.querySelector(".fechar").onclick = () => {
+     modal.style.display = "none";
+    iframe.src = "";
+        };
+    };
+    });
+  </script>
+  <footer>
+    <div class="caixa-branca" >
+      <a href="politica.html" target="_blank">© SenaiMovie. Todos os direitos reservados.</h2></a><h2>
+    </div>
+  </footer>
+</body>
+</html>

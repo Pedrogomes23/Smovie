@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: url("fundo2.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.logo img {
+  width: 200px;
+  max-width: 100%;
+}
+
+.form-wrapper {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 8px;
+  width: 350px;
+  box-shadow: 0 4px 100px rgba(0,0,0,0.2);
+}
+
+.form-wrapper h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-control {
+  position: relative;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-control input:focus {
+  border-color: #0a51e0;
+}
+
+.form-control label {
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  background: #fff;
+  padding: 0 4px;
+  font-size: 12px;
+  color: #555;
+}
+
+button {
+  padding: 12px;
+  background: #0a51e0;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #0737a6;
+}
+
+.form-help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.form-help a {
+  color: #0a51e0;
+  text-decoration: none;
+}
+
+.form-help a:hover {
+  text-decoration: underline;
+}
+
+.form-wrapper p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-wrapper p a {
+  color: #0a51e0;
+  text-decoration: none;
+}
+
+.form-wrapper small {
+  display: block;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #777;
+}
+
+.form-wrapper small a {
+  color: #0a51e0;
+}
